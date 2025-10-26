@@ -24,6 +24,7 @@ This project demonstrates a repeatable, auditable ETL workflow that automates th
 
   	
 Setup Instructions
+
 Clone the repository
 git clone https://github.com/mspmohle/insurance-data-ingestion.git           cd insurance-data-ingestion
               Create a virtual environment
