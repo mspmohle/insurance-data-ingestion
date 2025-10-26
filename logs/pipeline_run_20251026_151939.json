@@ -1,0 +1,11 @@
+{
+    "timestamp": "2025-10-26T15:19:39.837574",
+    "raw_input": "data/raw/client_insurance_feed.csv",
+    "processed_output": "data/processed/client_insurance_feed_processed.csv",
+    "database_output": "data/outputs/insurance_data.db",
+    "table_name": "insurance_policies",
+    "records_processed": 20,
+    "status": "SUCCESS",
+    "validation_passed": true,
+    "notes": "All pipeline stages completed without errors."
+}

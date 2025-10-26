@@ -1,0 +1,16 @@
+rename_columns:
+  policy_no: policy_number
+  insured_nm: insured_name
+  eff_dt: effective_date
+  exp_dt: expiration_date
+  state_cd: state
+date_fields:
+- effective_date
+- expiration_date
+normalize_fields:
+  state:
+    ind.: IN
+    ill.: IL
+    ? ''
+    : UNKNOWN
+drop_duplicates: true
