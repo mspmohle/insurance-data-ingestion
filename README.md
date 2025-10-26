@@ -14,6 +14,13 @@ Objectives
 5.	Log and document each ETL stage to ensure traceability and transparency.
 <img width="1154" height="654" alt="image" src="https://github.com/user-attachments/assets/44d5b6f0-f8b0-4553-83cd-51013cf77894" />
 
+Research Question and Goal
+
+Research Question
+How can an automated ETL pipeline reliably transform and validate client insurance data for import into an enterprise insurance-tracking system?
+
+Goal
+This project demonstrates a repeatable, auditable ETL workflow that automates the ingestion of raw insurance data files from external clients or vendors. The process extracts, transforms, and validates incoming records before loading them into a structured SQL database. By emphasizing data quality, schema alignment, and clear operational logging, the project models how Allied Solutions LLC could streamline daily file processing while maintaining accuracy and transparency across data transformation workflows.
 
   	
 Setup Instructions
