@@ -22,6 +22,14 @@ How can an automated ETL pipeline reliably transform and validate client insuran
 Goal
 This project demonstrates a repeatable, auditable ETL workflow that automates the ingestion of raw insurance data files from external clients or vendors. The process extracts, transforms, and validates incoming records before loading them into a structured SQL database. By emphasizing data quality, schema alignment, and clear operational logging, the project models how Allied Solutions LLC could streamline daily file processing while maintaining accuracy and transparency across data transformation workflows.
 
+ETL Pipeline Structure
+Stage	Purpose	Outputs
+Cell 1 – Configuration & Mock Data	Creates YAML mapping rules and generates sample raw insurance data.	config/client_mapping.yml, data/raw/client_insurance_feed.csv
+Cell 2 – Transformation Engine	Reads mapping config and standardizes client-specific columns into a common schema.	data/processed/client_insurance_feed_processed.csv
+Cell 3 – Data Cleaning & Resampling	Cleans whitespace, enforces date formats, normalizes case, and fills gaps.	Cleaned DataFrame
+Cell 4 – Validation & Quality Checks	Confirms column names, record counts, and missing-value thresholds.	Validation summary
+Cell 5 – SQL Import Simulation	Loads validated data into a SQLite database (insurance_policies table).	data/outputs/insurance_data.db
+Cell 6 – Logging & Summary Report	Writes a timestamped JSON log summarizing the ETL run and results.	logs/pipeline_run_YYYYMMDD_HHMMSS.json
   	
 Setup Instructions
 
